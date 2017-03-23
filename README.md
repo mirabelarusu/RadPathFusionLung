@@ -5,7 +5,7 @@ The code is provided here as suplementary material for the manuscript by Rusu et
 
 Author: Mirabela Rusu (mirabela.rusu@gmail.com)
 
-# Dependences: 
+## Dependences: 
 
 1. Matlab: This code was developed under version R2014a
 2. Elastix: 
@@ -14,7 +14,7 @@ Author: Mirabela Rusu (mirabela.rusu@gmail.com)
  * The code assumes Elastix can be found in the path: "C:\Program Files\elastix_v4.8\\". If needed the path needs to be edited on line 5 of the file [matlab/run_all_steps.m](matlab/run_all_steps.m)
  
  
-# How to run
+## How to run
 
 1. Go to the folder matlab
 2. Open run_all_steps.m in matlab
@@ -27,7 +27,7 @@ Author: Mirabela Rusu (mirabela.rusu@gmail.com)
     * step4_refineCTToHistology
     * step5_mapHistologyOntoCT
 
-# Input: 
+## Input: 
 The input data has to availble in a folder structure as showed by the example:
 1. CT
    |- CT.mha
@@ -36,23 +36,36 @@ The input data has to availble in a folder structure as showed by the example:
    | ....
    
 2. histology 
+
    |- imgs
+   
      |- Hist1.tif
+	 
 	 |- Hist2.tif
+	 
 	 |- Hist3.tif
+	 
    |- masks   
+   
      |- lesion 
+	 
        |- Hist1.tif
+	   
 	   |- Hist2.tif
+	   
 	   |- Hist3.tif
+	   
      |- invasion 
+	 
        |- Hist1.tif
+	   
 	   |- Hist2.tif
+	   
 	   |- Hist3.tif
  
 The file [matlab/run_all_steps.m] needs to be edited at line 11 to update the name of the masks folders.  
  
-# Output: 
+## Output: 
 
 1. The code will create two folders example/output_3 and example/output_4. The former contains the results when assuming a distance between slices of 3mm, while the later conains the results of the reconstruction when assuming a distance between slices of 4mm. 
 2. Each folder will contain 5 subfolder with the results of 5 individual steps
