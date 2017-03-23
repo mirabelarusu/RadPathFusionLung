@@ -29,6 +29,7 @@ Author: Mirabela Rusu (mirabela.rusu@gmail.com)
 
 ## Input: 
 The input data has to availble in a folder structure as showed by the example:
+```
 1. CT
    |- CT.mha
    |- CT_crop.mha
@@ -62,7 +63,7 @@ The input data has to availble in a folder structure as showed by the example:
 	   |- Hist2.tif
 	   
 	   |- Hist3.tif
- 
+ ```
 The file [matlab/run_all_steps.m] needs to be edited at line 11 to update the name of the masks folders.  
  
 ## Output: 
