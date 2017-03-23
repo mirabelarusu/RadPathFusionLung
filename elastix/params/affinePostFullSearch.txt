@@ -1,0 +1,91 @@
+// ********** Image Types
+
+(FixedInternalImagePixelType "float")
+(FixedImageDimension 3)
+(MovingInternalImagePixelType "float")
+(MovingImageDimension 3)
+
+
+// ********** Components
+
+(Registration "MultiResolutionRegistration")
+(FixedImagePyramid "FixedRecursiveImagePyramid")
+(MovingImagePyramid "MovingRecursiveImagePyramid")
+(Interpolator "LinearInterpolator")
+(ResampleInterpolator "FinalLinearInterpolator")
+(Metric "NormalizedMutualInformation")
+(Optimizer "AdaptiveStochasticGradientDescent")
+(Resampler "DefaultResampler")
+(Transform "EulerTransform")
+
+
+// ********** Pyramid
+
+// Total number of resolutions
+(NumberOfResolutions 3)
+(ImagePyramidSchedule 4 4 1 2 2 1 1 1 1)
+(ImagePyramidSmoothingSchedule 4 4 1 2 2 1 1 1 1)
+
+
+// ********** Transform
+
+(AutomaticScalesEstimation "true")
+(AutomaticTransformInitialization "true")
+(AutomaticTransformInitializationMethod "CenterOfGravity")
+(HowToCombineTransforms "Compose")
+
+
+// ********** Optimizer
+
+// Maximum number of iterations in each resolution level:
+(MaximumNumberOfIterations 1000)
+(AutomaticParameterEstimation "true")
+(UseAdaptiveStepSizes "true")
+
+
+// ********** Metric
+(NumberOfHistogramBins 32)
+(FixedKernelBSplineOrder 0)
+(MovingKernelBSplineOrder 3)
+
+// ********** Several
+
+(WriteTransformParametersEachIteration "false")
+(WriteTransformParametersEachResolution "false")
+(WriteResultImageAfterEachResolution "false")
+(WriteResultImage "false")
+(ResultImageFormat "mha")
+(ShowExactMetricValue "false")
+(ErodeMask "false")
+(UseDirectionCosines "true")
+(CheckNumberOfSamples "false")
+
+// ********** ImageSampler
+
+//Number of spatial samples used to compute the mutual information in each resolution level:
+(ImageSampler "RandomCoordinate")
+(NumberOfSpatialSamples 50000)
+(NewSamplesEveryIteration "true")
+(UseRandomSampleRegion "false")
+(MaximumNumberOfSamplingAttempts 5)
+
+
+// ********** Interpolator and Resampler
+
+//Order of B-Spline interpolation used in each resolution level:
+(BSplineInterpolationOrder 1)
+
+//Order of B-Spline interpolation used for applying the final deformation:
+(FinalBSplineInterpolationOrder 3)
+
+//Default pixel value for pixels that come from outside the picture:
+(DefaultPixelValue 0)
+
+// *********** Optimizer parameters
+//(MaximumStepLength 0.91)
+//( SP_a 680.160816 396.143760 556.376373 )
+//( SP_A 20.000000 20.000000 20.000000 )
+//( SP_alpha 1.000000 1.000000 1.000000 )
+//( SigmoidMax 1.000000 1.000000 1.000000 )
+//( SigmoidMin -0.225432)
+//( SigmoidScale 0.000001 0.000003 0.000002 )
