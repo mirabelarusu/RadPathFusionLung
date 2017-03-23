@@ -1,6 +1,6 @@
 example_id = '';
 
-%elastix executable; Dont forget \" to escape the space and allow elastix
+%path to your elastix executable; Dont forget \" to escape the space and allow elastix
 %running
 elastix_base = '"C:\Program Files\elastix_v4.8\\"';
 elastix_exe = [elastix_base, 'elastix']; 
