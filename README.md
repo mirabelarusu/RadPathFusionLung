@@ -38,18 +38,18 @@ The input data has to availble in a folder structure as showed by the example:
    
 2. histology 
    |- imgs
-     |- Hist1.tif
-	 |- Hist2.tif
-	 |- Hist3.tif
+	|- Hist1.tif
+	|- Hist2.tif
+	|- Hist3.tif
    |- masks   
-     |- lesion 
-       |- Hist1.tif
-	   |- Hist2.tif
-	   |- Hist3.tif
-     |- invasion 
-       |- Hist1.tif	   
-	   |- Hist2.tif
-	   |- Hist3.tif
+	|- lesion 
+		|- Hist1.tif
+		|- Hist2.tif
+		|- Hist3.tif
+	|- invasion 
+		|- Hist1.tif	   
+		|- Hist2.tif
+		|- Hist3.tif
  ```
 The file [matlab/run_all_steps.m] needs to be edited at line 11 to update the name of the masks folders.  
  
