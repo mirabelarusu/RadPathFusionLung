@@ -9,9 +9,9 @@ Author: Mirabela Rusu (mirabela.rusu@gmail.com)
 
 1. Matlab: This code was developed under version R2014a
 2. Elastix: 
- * download from: [http://elastix.isi.uu.nl/](http://elastix.isi.uu.nl/)
- * This code was tested under version 4.8
- * The code assumes Elastix can be found in the path: "C:\Program Files\elastix_v4.8\\". If needed the path needs to be edited on line 5 of the file [matlab/run_all_steps.m](matlab/run_all_steps.m)
+	* download from: [http://elastix.isi.uu.nl/](http://elastix.isi.uu.nl/)
+	* This code was tested under version 4.8
+	* The code assumes Elastix can be found in the path: "C:\Program Files\elastix_v4.8\\". If needed the path needs to be edited on line 5 of the file [matlab/run_all_steps.m](matlab/run_all_steps.m)
  
  
 ## How to run
@@ -21,11 +21,11 @@ Author: Mirabela Rusu (mirabela.rusu@gmail.com)
 3. Run script 
 4. When promted: 'File "...\run_all_steps.m" is not found in the current folder or the matbal path.' Choose, "Add to path"
   The scipt will run the 5 individual steps: 
-    * step1_reconstrucHistology
-    * step2_exhaustiveSearch
-    * step3_refineHistology
-    * step4_refineCTToHistology
-    * step5_mapHistologyOntoCT
+    * [step1_reconstrucHistology](matlab/step1_reconstrucHistology.m)
+    * [step2_exhaustiveSearch](matlab/step2_exhaustiveSearch)
+    * [step3_refineHistology](matlab/step3_refineHistology.m)
+    * [step4_refineCTToHistology](matlab/step4_refineCTToHistology.m)
+    * {step5_mapHistologyOntoCT](matlab/step5_mapHistologyOntoCT.m)
 
 ## Input: 
 The input data has to availble in a folder structure as showed by the example:
@@ -51,7 +51,7 @@ The input data has to availble in a folder structure as showed by the example:
 		|- Hist2.tif
 		|- Hist3.tif
  ```
-The file [matlab/run_all_steps.m] needs to be edited at line 11 to update the name of the masks folders.  
+The file [matlab/run_all_steps.m](matlab/run_all_steps.m) needs to be edited at line 11 to update the name of the masks folders.  
  
 ## Output: 
 
