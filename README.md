@@ -25,7 +25,7 @@ Author: Mirabela Rusu (mirabela.rusu@gmail.com)
     * [step2_exhaustiveSearch](matlab/step2_exhaustiveSearch)
     * [step3_refineHistology](matlab/step3_refineHistology.m)
     * [step4_refineCTToHistology](matlab/step4_refineCTToHistology.m)
-    * {step5_mapHistologyOntoCT](matlab/step5_mapHistologyOntoCT.m)
+    * [step5_mapHistologyOntoCT](matlab/step5_mapHistologyOntoCT.m)
 
 ## Input: 
 The input data has to availble in a folder structure as showed by the example:
